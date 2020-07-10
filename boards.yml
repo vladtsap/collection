@@ -1,0 +1,110 @@
+boards:
+  - name: Підбірка
+    slug: collection
+    is_visible: true
+    is_private: false
+    curator:
+      name: Підбірка
+      title: Краще з найкращого
+      url: <a href="https://www.instagram.com/vladtsap/">інстаграм</a> та <a href="https://t.me/tebetam">телеграм</a> автора
+      avatar: https://i.vas3k.ru/fhr.png
+      bio: Пишу в блог, пишу код, люблю технології і красиву фотографію
+      footer: >
+        це підбірка джерел інформації, які я читаю.
+        Зроблена суб'єктивно і егоїстично під мене.
+        Жирним виділяються свіжі статті.
+        Сторінка обновляється раз в годину.
+    blocks:
+      - name: Технології
+        slug: tech
+        feeds:
+          - name: ITC
+            url: https://itc.ua/
+            rss: https://itc.ua/feed/
+          - name: AIN
+            url: https://ain.ua/
+            rss: https://ain.ua/feed/
+          - name: На часі
+            url: https://nachasi.com
+            rss: https://nachasi.com/feed/
+      - name: Місто
+        slug: city
+        feeds:
+          - name: The Village
+            url: https://www.the-village.com.ua
+            rss: https://www.the-village.com.ua/feeds/posts.atom
+          - name: Львів
+            url: http://lviv1256.com
+            rss: http://lviv1256.com/feed/
+          - name: Платформа
+            url: https://platfor.ma/
+            rss: https://infomate.club/parsing/telegram/platformushka/
+            is_parsable: false
+      - name: Політика
+        slug: policy
+        feeds:
+          - name: Суспільне
+            url: https://suspilne.media
+            rss: https://suspilne.media/rss/ukrnet.rss
+          - name: Бабель
+            url: https://thebabel.com.ua/
+            rss: https://tg2rss.xyz/channel/?name=thebabel
+            is_parsable: false
+          - name: Громадське
+            url: https://hromadske.ua/
+            rss: https://hromadske.ua/feed/
+      - name: Культура
+        slug: culture
+        feeds:
+          - name: Програмування
+            url: https://dou.ua/
+            rss: https://dou.ua/feed/
+          - name: Дизайн
+            url: https://telegraf.design/
+            rss: https://telegraf.design/feed/
+          - name: Репортажі
+            url: http://www.reporters.media
+            rss: http://www.reporters.media/feed/
+      - name: Блоги
+        slug: blogs
+        feeds:
+          - name: vas3k
+            url: https://vas3k.ru/
+            rss: https://vas3k.ru/rss/
+          - name: vas3k.club
+            url: https://t.me/vas3k_club
+            rss: https://tg2rss.xyz/channel/?name=vas3k_club
+            is_parsable: false
+          - name: tuzov
+            url: https://tuzovpavel.ru/blog/
+            rss: https://tuzovpavel.ru/feed/
+          - name: tonsky
+            url: https://tonsky.livejournal.com/
+            rss: https://tonsky.livejournal.com/data/rss/
+          - name: alexmak
+            url: https://alexmak.net/
+            rss: https://alexmak.net/feed/
+          - name: alexmakus
+            url: https://t.me/alexmakus
+            rss: https://tg2rss.xyz/channel/?name=alexmakus
+            is_parsable: false
+      - name: Російські ЗМІ
+        slug: russian
+        feeds:
+          - name: addmeto
+            url: https://addmeto.cc
+            rss: https://addmeto.cc/rss/
+          - name: TJ
+            url: https://tjournal.ru
+            rss: https://tjournal.ru/rss/all
+          - name: VC
+            url: https://vc.ru
+            rss: https://vc.ru/rss/all
+            is_parsable: false
+      - name: Україна
+        slug: ukraine
+        feeds:
+          - name: Correctarium
+            url: https://t.me/correctariumukr
+            rss: https://tg2rss.xyz/channel/?name=correctariumukr
+            is_parsable: false
