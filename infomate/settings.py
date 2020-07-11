@@ -9,14 +9,13 @@ from sentry_sdk.integrations.django import DjangoIntegration
 DEBUG = os.getenv("DEBUG", True)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY = "wow so secret"
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "0.0.0.0", "vas3k.ru", "infomate.club"]
+SECRET_KEY = "m6lSvTo5EN0vJlKHVUZAVK0kiRLdJpUC"
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "212.47.247.43", "collection.vladtsap.com"]
 
 INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.humanize",
     "django_bleach",
-    "auth",
     "boards",
     "parsing"
 ]
@@ -38,8 +37,7 @@ TEMPLATES = [
             "context_processors": [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
-                "boards.context_processors.settings_processor",
-                "auth.context_processors.me",
+                "boards.context_processors.settings_processor"
             ],
         },
     },
@@ -73,7 +71,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = "ru-ru"
+LANGUAGE_CODE = "uk-uk"
 TIME_ZONE = "UTC"
 USE_I18N = True
 USE_L10N = True
@@ -98,19 +96,16 @@ BOARD_CACHE_SECONDS = 10 * 60  # 10 min
 
 # App settings
 
-APP_NAME = "Infomate"
-APP_TITLE = "Читай интернет нормально"
+APP_NAME = "Краще з найкращого"
+APP_TITLE = "Читай інтернет нормально"
 APP_DESCRIPTION = APP_TITLE
-APP_HOST = "https://infomate.club"
 
-JWT_SECRET = "wow so secret"  # should be the same as on vas3k.ru
+JWT_SECRET = "m6lSvTo5EN0vJlKHVUZAVK0kiRLdJpUC"  # should be the same as on vas3k.ru
 JWT_ALGORITHM = "HS256"
 JWT_EXP_TIMEDELTA = timedelta(days=120)
 
 AUTH_COOKIE_NAME = "jwt"
 AUTH_COOKIE_MAX_AGE = 300 * 24 * 60 * 60  # 300 days
-AUTH_REDIRECT_URL = "https://vas3k.ru/auth/external/"
-AUTH_FAILED_REDIRECT_URL = "https://vas3k.ru/auth/login/"
 
 SENTRY_DSN = None
 

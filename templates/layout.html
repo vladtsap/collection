@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="ru">
+<html lang="uk">
 <head>
     <script>
         const theme = localStorage.getItem('theme');
@@ -8,7 +8,7 @@
             document.documentElement.setAttribute('theme', theme);
         }
     </script>
-    <title>{% block title %}{{ settings.APP_NAME|safe }}{% endblock %}</title>
+    <title>{{ settings.APP_NAME|safe }}</title>
     {% block meta %}
         {% include "common/meta.html" %}
     {% endblock %}
@@ -23,10 +23,6 @@
 {% block body %}
     {% block menu %}
         <div class="menu">
-            <div class="menu-logo"><a href="{% url "index" %}">
-                <img src="{% static "images/logo-128x128.png" %}" alt="">&nbsp;{{ settings.APP_NAME|lower|safe }}</a>
-            </div>
-            <div class="menu-center"></div>
             <div class="menu-theme-switcher">
                 <label class="theme-switcher" for="checkbox">
                     <input type="checkbox" id="checkbox" />
@@ -41,11 +37,7 @@
 
 {% block footer %}
     <div class="footer">
-        Зробив <a href="https://vas3k.ru">vas3k</a>. Код проєкту <a href="https://github.com/vas3k/infomate.club">відкритий</a>.<br><br>
-        Сайт використовує <a href="https://ru.wikipedia.org/wiki/Cookie" target="_blank">кукі</a> для авторизації<br> і збирає <a href="{% url "privacy_policy" %}">анонімні дані</a> для статистики.
-        {% if me %}
-            <br><a href="{% url "logout" %}" class="button logout-button">Вийти</a>
-        {% endif %}
+        Зробив <a href="https://vas3k.ru">vas3k</a>.<br><br>Підібрав <a href="https://vladtsap.com">vladtsap</a>.
     </div>
 {% endblock %}
 
