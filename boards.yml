@@ -8,12 +8,11 @@ boards:
       title: Краще з найкращого
       url: <a href="https://www.instagram.com/vladtsap/">інстаграм</a> та <a href="https://t.me/tebetam">телеграм</a> автора
       avatar: https://i.vas3k.ru/fhr.png
-      bio: Пишу в блог, пишу код, люблю технології і красиву фотографію
+      bio: Колеція новин з перевірених джерел у зручному форматі
       footer: >
-        це підбірка джерел інформації, які я читаю.
-        Зроблена суб'єктивно і егоїстично під мене.
+        це підбірка джерел інформації, які я регулярно читаю.
         Свіжі статті виділяються темнішим.
-        Сторінка обновляється раз в годину.
+        Сторінка оновлюється кожні пів години.
     blocks:
       - name: Технології
         slug: tech
@@ -36,23 +35,24 @@ boards:
           - name: Львів
             url: http://lviv1256.com
             rss: http://lviv1256.com/feed/
-          - name: Платформа
+          - name: Platforma
             url: https://platfor.ma/
-            rss: https://infomate.club/parsing/telegram/platformushka/
+            rss: https://tg2rss.xyz/channel/?name=platformushka
             is_parsable: false
       - name: Політика
         slug: policy
         feeds:
           - name: Суспільне
             url: https://suspilne.media
-            rss: https://suspilne.media/rss/ukrnet.rss
+            rss: https://tg2rss.xyz/channel/?name=suspilnenews
+            is_parsable: false
           - name: Бабель
             url: https://thebabel.com.ua/
             rss: https://tg2rss.xyz/channel/?name=thebabel
             is_parsable: false
-          - name: Громадське
-            url: https://hromadske.ua/
-            rss: https://hromadske.ua/feed/
+          - name: Радіо Свобода
+            url: https://www.radiosvoboda.org/
+            rss: https://www.radiosvoboda.org/api/zrqiteuuir
       - name: Культура
         slug: culture
         feeds:
@@ -71,19 +71,16 @@ boards:
           - name: vas3k
             url: https://vas3k.ru/
             rss: https://vas3k.ru/rss/
-          - name: vas3k.club
-            url: https://t.me/vas3k_club
-            rss: https://tg2rss.xyz/channel/?name=vas3k_club
-            is_parsable: false
-          - name: tuzov
-            url: https://tuzovpavel.ru/blog/
-            rss: https://tuzovpavel.ru/feed/
-          - name: tonsky
-            url: https://tonsky.livejournal.com/
-            rss: https://tonsky.livejournal.com/data/rss/
           - name: alexmak
             url: https://alexmak.net/
             rss: https://alexmak.net/feed/
+          - name: Максим Ільяхов
+            url: http://maximilyahov.ru/
+            rss: http://maximilyahov.ru/blog/rss/
+          - name: vas3k.club
+            url: https://vas3k.club/
+            rss: https://tg2rss.xyz/channel/?name=vas3k_club
+            is_parsable: false
           - name: alexmakus
             url: https://t.me/alexmakus
             rss: https://tg2rss.xyz/channel/?name=alexmakus
@@ -91,6 +88,10 @@ boards:
       - name: Російські ЗМІ
         slug: russian
         feeds:
+          - name: Zavtracast
+            url: https://zavtracast.ru/
+            rss: https://tg2rss.xyz/channel/?name=zavtracast
+            is_parsable: false
           - name: addmeto
             url: https://addmeto.cc
             rss: https://addmeto.cc/rss/
