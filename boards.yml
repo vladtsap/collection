@@ -37,18 +37,18 @@ boards:
             rss: http://lviv1256.com/feed/
           - name: Platforma
             url: https://platfor.ma/
-            rss: https://tg2rss.xyz/channel/?name=platformushka
+            rss: https://rsshub.app/telegram/channel/platformushka
             is_parsable: false
       - name: Політика
         slug: policy
         feeds:
           - name: Суспільне
             url: https://suspilne.media
-            rss: https://tg2rss.xyz/channel/?name=suspilnenews
+            rss: https://rsshub.app/telegram/channel/suspilnenews
             is_parsable: false
           - name: Бабель
             url: https://thebabel.com.ua/
-            rss: https://tg2rss.xyz/channel/?name=thebabel
+            rss: https://rsshub.app/telegram/channel/thebabel
             is_parsable: false
           - name: Радіо Свобода
             url: https://www.radiosvoboda.org/
@@ -79,18 +79,18 @@ boards:
             rss: http://maximilyahov.ru/blog/rss/
           - name: vas3k.club
             url: https://vas3k.club/
-            rss: https://tg2rss.xyz/channel/?name=vas3k_club
+            rss: https://rsshub.app/telegram/channel/vas3k_club
             is_parsable: false
           - name: alexmakus
             url: https://t.me/alexmakus
-            rss: https://tg2rss.xyz/channel/?name=alexmakus
+            rss: https://rsshub.app/telegram/channel/alexmakus
             is_parsable: false
       - name: Російські ЗМІ
         slug: russian
         feeds:
           - name: Zavtracast
             url: https://zavtracast.ru/
-            rss: https://tg2rss.xyz/channel/?name=zavtracast
+            rss: https://rsshub.app/telegram/channel/zavtracast
             is_parsable: false
           - name: addmeto
             url: https://addmeto.cc
@@ -107,5 +107,5 @@ boards:
         feeds:
           - name: Correctarium
             url: https://t.me/correctariumukr
-            rss: https://tg2rss.xyz/channel/?name=correctariumukr
+            rss: https://rsshub.app/telegram/channel/correctariumukr
             is_parsable: false
