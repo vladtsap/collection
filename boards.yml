@@ -12,7 +12,7 @@ boards:
       footer: >
         це підбірка джерел інформації, які я регулярно читаю.
         Свіжі статті виділяються темнішим.
-        Сторінка оновлюється кожні пів години.
+        Сторінка оновлюється щогодини.
     blocks:
       - name: Технології
         slug: tech
@@ -56,15 +56,27 @@ boards:
       - name: Культура
         slug: culture
         feeds:
-          - name: Програмування
-            url: https://dou.ua/
-            rss: https://dou.ua/feed/
+          - name: Музика
+            url: https://slukh.media/
+            rss: https://slukh.media/feed/
           - name: Дизайн
             url: https://telegraf.design/
             rss: https://telegraf.design/feed/
           - name: Репортажі
             url: http://www.reporters.media
             rss: http://www.reporters.media/feed/
+      - name: айті
+        slug: it
+        feeds:
+          - name: DOU
+            url: https://dou.ua/
+            rss: https://dou.ua/feed/
+          - name: Codeguida
+            url: https://codeguida.com/
+            rss: https://codeguida.com/feeds/
+          - name: addmeto
+            url: https://addmeto.cc
+            rss: https://addmeto.cc/rss/
       - name: Блоги
         slug: blogs
         feeds:
@@ -92,9 +104,6 @@ boards:
             url: https://zavtracast.ru/
             rss: https://rsshub.app/telegram/channel/zavtracast
             is_parsable: false
-          - name: addmeto
-            url: https://addmeto.cc
-            rss: https://addmeto.cc/rss/
           - name: TJ
             url: https://tjournal.ru
             rss: https://tjournal.ru/rss/all
