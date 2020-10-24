@@ -71,12 +71,13 @@ boards:
           - name: DOU
             url: https://dou.ua/
             rss: https://dou.ua/feed/
-          - name: Codeguida
-            url: https://codeguida.com/
-            rss: https://codeguida.com/feeds/
           - name: addmeto
             url: https://addmeto.cc
             rss: https://addmeto.cc/rss/
+          - name: alexmakus
+            url: https://t.me/alexmakus
+            rss: https://rsshub.app/telegram/channel/alexmakus
+            is_parsable: false
       - name: Блоги
         slug: blogs
         feeds:
@@ -92,10 +93,6 @@ boards:
           - name: vas3k.club
             url: https://vas3k.club/
             rss: https://rsshub.app/telegram/channel/vas3k_club
-            is_parsable: false
-          - name: alexmakus
-            url: https://t.me/alexmakus
-            rss: https://rsshub.app/telegram/channel/alexmakus
             is_parsable: false
       - name: Російські ЗМІ
         slug: russian

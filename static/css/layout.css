@@ -46,7 +46,10 @@
     }
 
 .board {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     position: relative;
     max-width: var(--max-content-width);
     margin: 0 auto;
@@ -56,21 +59,53 @@
     display: block;
 }
 
-.feeds {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto auto;
+.block-100 {
+    width: 100%;
 }
+
+.block-50 {
+    width: 49%;
+}
+
+@media only screen and (max-width : 570px) {
+    .block-100, .block-50 {
+        width: 100%;
+    }
+}
+
+
+.feeds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+    .feed {
+        width: 100%;
+        min-width: 200px;
+        box-sizing: border-box;
+    }
+
+    .feeds-3 .feed {
+        width: 33%;
+    }
+
+    .feeds-2 .feed {
+        width: 50%;
+    }
 
     .feed .article-tooltip {
         /* Shift tooltip to right */
-        left: 85%;
+        left: 80%;
         top: -100px;
         right: auto;
         bottom: auto;
     }
 
-    .feed:nth-child(3n) .article-tooltip {
+    .feeds-3 .feed:nth-child(3n) .article-tooltip,
+    .feeds-2 .feed:nth-child(2n) .article-tooltip,
+    .block-50:nth-child(2n+1) .article-tooltip {
         /* Shift tooltip to left */
         left: -105%;
         top: -100px;
@@ -79,12 +114,13 @@
     }
 
     @media only screen and (max-width : 1024px)  {
-        /* Switch to 2-columns */
-        .feeds {
-            grid-template-columns: 50% 50%;
+        /* Switch 3 to 2-columns */
+        .feeds-3 .feed {
+            width: 50%;
         }
 
-            .feeds .feed .article-tooltip {
+            .feeds .feed .article-tooltip,
+            .feeds-3 .feed:nth-child(3n) .article-tooltip {
                 /* Shift tooltip to right */
                 left: 85%;
                 top: -200px;
@@ -92,7 +128,7 @@
                 bottom: auto;
             }
 
-            .feeds .feed:nth-child(2n) .article-tooltip {
+            .feeds-3 .feed:nth-child(2n) .article-tooltip {
                 /* Shift tooltip to left */
                 left: -105%;
                 top: -100px;
@@ -102,8 +138,9 @@
     }
 
     @media only screen and (max-width : 750px) {
-        .feeds {
-            grid-template-columns: 100%;
+        /* Single column everywhere */
+        .feeds .feed {
+            width: 100%;
         }
 
             .feeds .feed .article-tooltip {
