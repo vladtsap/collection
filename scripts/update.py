@@ -2,10 +2,9 @@ import io
 import os
 import sys
 import django
-from django.db.models import Q
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "infomate.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "collection.settings")
 django.setup()
 
 import logging
@@ -96,9 +95,9 @@ def worker():
 
         try:
             refresh_feed(task)
-        except Exception:
+        except Exception as e:
             # catch all to avoid infinite wait in .join()
-            log.exception("Error refreshing feed")
+            log.exception(f"Error refreshing feed: {e}")
 
         queue.task_done()
 
@@ -219,7 +218,6 @@ def check_conditions(conditions, entry):
                 return False
 
     return True
-
 
 
 def load_page_safe(url):

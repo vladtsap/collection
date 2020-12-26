@@ -3,7 +3,6 @@ from datetime import datetime, timedelta
 from django.conf import settings
 from django.core.cache import cache
 from django.shortcuts import render, get_object_or_404
-from django.views.decorators.cache import cache_page
 from django.views.decorators.http import last_modified
 
 from boards.cache import board_last_modified_at, collection_last_modified_at
@@ -19,7 +18,6 @@ def index(request):
     if cached_page and board.refreshed_at and board.refreshed_at <= \
             datetime.utcnow() - timedelta(seconds=settings.BOARD_CACHE_SECONDS):
         return cached_page
-
 
     blocks = BoardBlock.objects.filter(board=board)
     feeds = BoardFeed.objects.filter(board=board)

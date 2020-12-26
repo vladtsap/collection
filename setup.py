@@ -12,7 +12,7 @@ PARENT = pathlib.Path(__file__).parent
 def read_version():
     init_py = os.path.join(
         os.path.dirname(__file__),
-        "infomate",
+        "collection",
         "__init__.py",
     )
 
@@ -33,9 +33,9 @@ def read_requirements(path: str) -> List[str]:
 
 
 setup(
-    name="infomate",
+    name="collection",
     version=read_version(),
-    description="infomate",
+    description="collection",
     platforms=["POSIX"],
     packages=find_packages(),
     package_data={

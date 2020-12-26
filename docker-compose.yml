@@ -1,13 +1,13 @@
 version: '3.7'
 
 services:
-  infomate_app: &app
+  collection_app: &app
     build:
       context: .
       args:
         requirements: requirements.txt
     command: make docker_run
-    container_name: infomate_app
+    container_name: collection_app
     environment:
       - DEBUG=True
       - PYTHONUNBUFFERED=1
@@ -17,21 +17,21 @@ services:
     depends_on:
       - postgres
     ports:
-      - "80:80"
+      - "8000:8000"
 
   postgres:
     image: postgres:11
-    container_name: infomate_postgres
+    container_name: collection_postgres
     environment:
         - POSTGRES_USER=postgres
         - POSTGRES_PASSWORD=postgres
-        - POSTGRES_DB=infomate
+        - POSTGRES_DB=collection
     ports:
         - "54321:5432"
 
   migrate_and_init:
     <<: *app
-    container_name: infomate_migrate_and_init
+    container_name: collection_migrate_and_init
     restart: "no"
     ports: []
     command: make migrate feed_init # feed_refresh # <-- uncomment to parse some data

@@ -1,1 +1,1 @@
-docker exec -i infomate_app /bin/bash -c "python3 scripts/update.py"
+docker exec -i collection_app /bin/bash -c "python3 scripts/update.py"

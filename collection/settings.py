@@ -17,14 +17,13 @@ INSTALLED_APPS = [
     "django.contrib.humanize",
     "django_bleach",
     "boards",
-    "parsing"
 ]
 
 MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 ]
 
-ROOT_URLCONF = "infomate.urls"
+ROOT_URLCONF = "collection.urls"
 
 TEMPLATES = [
     {
@@ -43,12 +42,12 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "infomate.wsgi.application"
+WSGI_APPLICATION = "collection.wsgi.application"
 
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "infomate",
+        "NAME": "collection",
         "USER": "postgres",  # redefined in private_settings.py
         "PASSWORD": "postgres",
         "HOST": "postgres",
@@ -112,21 +111,7 @@ SENTRY_DSN = None
 MEDIA_UPLOAD_URL = "https://i.vas3k.ru/upload/"
 MEDIA_UPLOAD_CODE = None  # should be set in private_settings.py
 
-TELEGRAM_APP_ID = None  # should set in private_settings.py
-TELEGRAM_APP_HASH = None  # should set in private_settings.py
-TELEGRAM_SESSION_FILE = None  # should set in private settings.py
-TELEGRAM_CACHE_SECONDS = 10 * 60  # 10 min
-
 BLEACH_STRIP_TAGS = True
-
-try:
-    # poor mans' private settings
-    # As due to obvious reasons this file is missing in the repository, suppress the following 'pyflakes' error codes:
-    # - F401 'infomate.private_settings.*' imported but unused
-    # - F403 'from infomate.private_settings import *' used; unable to detect undefined names
-    from infomate.private_settings import *  # noqa: F401 F403
-except ImportError:
-    pass
 
 
 if SENTRY_DSN and not DEBUG:
