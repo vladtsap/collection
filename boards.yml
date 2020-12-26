@@ -74,9 +74,9 @@ boards:
           - name: addmeto
             url: https://addmeto.cc
             rss: https://addmeto.cc/rss/
-          - name: alexmakus
-            url: https://t.me/alexmakus
-            rss: https://rsshub.app/telegram/channel/alexmakus
+          - name: Zavtracast
+            url: https://zavtracast.ru/
+            rss: https://rsshub.app/telegram/channel/zavtracast
             is_parsable: false
       - name: Блоги
         slug: blogs
@@ -94,19 +94,9 @@ boards:
             url: https://vas3k.club/
             rss: https://rsshub.app/telegram/channel/vas3k_club
             is_parsable: false
-      - name: Російські ЗМІ
-        slug: russian
-        feeds:
-          - name: Zavtracast
-            url: https://zavtracast.ru/
-            rss: https://rsshub.app/telegram/channel/zavtracast
-            is_parsable: false
-          - name: TJ
-            url: https://tjournal.ru
-            rss: https://tjournal.ru/rss/all
-          - name: VC
-            url: https://vc.ru
-            rss: https://vc.ru/rss/all
+          - name: alexmakus
+            url: https://t.me/alexmakus
+            rss: https://rsshub.app/telegram/channel/alexmakus
             is_parsable: false
       - name: Україна
         slug: ukraine
