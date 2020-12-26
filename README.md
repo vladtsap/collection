@@ -1,41 +1,18 @@
-# Infomate.club
+# collection
 
-[![Build Status](https://travis-ci.org/vas3k/infomate.club.svg?branch=master)](https://travis-ci.org/vas3k/infomate.club) [![GitHub license](https://img.shields.io/github/license/vas3k/infomate.club)](https://github.com/vas3k/infomate.club/blob/master/LICENSE) [![GitHub contributors](https://img.shields.io/github/contributors/vas3k/infomate.club)](https://GitHub.com/vas3k/infomate.club/graphs/contributors/)
+> #### This project was forked from [infomate.club](https://github.com/vas3k/infomate.club)
 
-Infomate is a small web service that shows multiple RSS sources on one page and performs tricky parsing and summarizing articles using TextRank algorithm. 
+_Collection_ is a small web service that shows multiple RSS sources on one page.
 
-It helps to keep track of news from different areas without subscribing to hundreds of media accounts and getting annoying notifications.
-
-Thematic and people-based collections does a really good job for discovery of new sources of information. Since we all are biased, such compilations can really help us to get out of information bubbles.
-
-### Live URL: [infomate.club](https://infomate.club)
-
-![](https://i.vas3k.ru/i7m.png)
-
-## This is a pet-project 🐶
-
-Which means you really shouldn't expect much from it. I wrote it over the weekend to solve my own pain. No state-of-art kubernetes bullshit, no architecture patterns, even no tests at all. It's here just to show people what a pet-project might look like.
-
-This code has been written for fun, not for business. There is usually a big difference. Like between riding a bike on the streets and cycling in the wild for fun :)
-
-## How it works
-
-It's basically a Django web app with a bunch of [scripts](scripts) for RSS parsing. It stores the parsed data in a PostgreSQL database.
-
-The web app is only used to show the data (with heavy caching). 
-Parsing and feed updates are performed by the three scripts running in cron. Like poor people do.
-
-[Feedparser](https://pythonhosted.org/feedparser/) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) are used to find, download and parse RSS. 
-
-Text summarization is done via [newspaper3k](https://newspaper.readthedocs.io/en/latest/) with some additional protection against bad types of content like podcasts and too big pages in general, which can eat all your memory. Anything can happen in the RSS world :)
+### Live URL: [collection.vladtsap.com](https://collection.vladtsap.com)
 
 ## Running it locally
 
 The easy way. Install [docker](https://docs.docker.com/install/) on your machine. Then:
 
 ```
-git clone git@github.com:vas3k/infomate.club.git
-cd infomate.club
+git clone git@github.com:vladtsap/collection.git
+cd collection
 docker-compose up --build
 ```
 
@@ -123,14 +100,6 @@ boards:
         url: https://techcrunch.com
         is_parsable: false  # do not try to parse pages, show RSS content only
 ```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-You can help us with opened issues too. There's always something to work on.
-
-We don't have any strict rules on formatting, just explain your motivation and the changes you've made to the PR description so that others understand what's going on.
 
 ## License
 

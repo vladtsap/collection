@@ -4,7 +4,7 @@ import django
 
 BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
 sys.path.append(BASE_DIR)
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "infomate.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "collection.settings")
 django.setup()
 
 from urllib.parse import urljoin

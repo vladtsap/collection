@@ -3,7 +3,7 @@
 # Makes shell non-interactive and exit on any error
 .SHELLFLAGS = -ec
 
-PROJECT_NAME=infomate
+PROJECT_NAME=collection
 
 dev-requirements:  ## Install dev requirements
 	@pip3 install -r requirements.txt
