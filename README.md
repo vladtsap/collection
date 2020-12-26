@@ -134,7 +134,7 @@ We don't have any strict rules on formatting, just explain your motivation and t
 
 ## License
 
-[Apache 2.0](LICENSE) © Vasily Zubarev
+[Apache 2.0](https://github.com/vas3k/infomate.club/blob/master/LICENSE) © Vasily Zubarev
 
 > TL;DR: you can modify, distribute and use it commercially, 
 but you MUST reference the original author or give a link to service

@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 
 from boards.models import Board, BoardFeed, BoardBlock
 from utils.images import upload_image_from_url
-from scripts.common import DEFAULT_REQUEST_HEADERS, parse_domain
+from scripts.common import DEFAULT_REQUEST_HEADERS
 
 
 @click.command()
