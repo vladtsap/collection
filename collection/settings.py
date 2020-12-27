@@ -10,7 +10,7 @@ DEBUG = os.getenv("DEBUG", True)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "m6lSvTo5EN0vJlKHVUZAVK0kiRLdJpUC"
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "212.47.247.43", "collection.vladtsap.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "0.0.0.0", "collection.vladtsap.com"]
 
 INSTALLED_APPS = [
     "django.contrib.staticfiles",
