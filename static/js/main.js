@@ -30,27 +30,6 @@ function hideTooltipOnAnyClick() {
     }, true);
 }
 
-function addWeirdLogicThatSomeGeeksWillUseOnceAndForget() {
-    let body = document.querySelector('body');
-    body.addEventListener('keyup', function(e) {
-        let tooltip;
-
-        if (e.keyCode == 81) {
-            tooltip = document.activeElement.parentNode.parentNode.querySelector('.article-tooltip');
-            if (tooltip.style.visibility == "visible") {
-                tooltip.style.visibility = null;
-            } else {
-                tooltip.style.visibility = "visible";
-            }
-        }
-
-
-        if (e.keyCode == 9) {
-            hideTooltip();
-        }
-    });
-}
-
 function useSmartTooltipPositioning() {
     // This handler is trying to keep the tooltip card on the screen
     // so that it doesn't go beyond its borders if it's enough space nearby
@@ -139,4 +118,3 @@ initializeThemeSwitcher();
 showTooltipOnClickOnMobile();
 hideTooltipOnAnyClick();
 useSmartTooltipPositioning();
-addWeirdLogicThatSomeGeeksWillUseOnceAndForget();

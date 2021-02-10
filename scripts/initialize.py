@@ -15,16 +15,14 @@ import yaml
 from bs4 import BeautifulSoup
 
 from boards.models import Board, BoardFeed, BoardBlock
-from utils.images import upload_image_from_url
 from scripts.common import DEFAULT_REQUEST_HEADERS
 
 
 @click.command()
 @click.option("--config", default="boards.yml", help="Boards YAML file")
 @click.option("--board-slug", default=None, help="Board slug to parse only one exact board")
-@click.option("--upload-favicons/--no-upload-favicons", default=False, help="Upload favicons")
 @click.option("-y", "always_yes", is_flag=True, help="Don't ask any questions (good for scripts)")
-def initialize(config, board_slug, upload_favicons, always_yes):
+def initialize(config, board_slug, always_yes):
     yaml_file = os.path.join(BASE_DIR, config)
     with open(yaml_file) as f:
         try:
@@ -133,7 +131,7 @@ def initialize(config, board_slug, upload_favicons, always_yes):
                     feed.name = feed_name
                     feed.comment = feed_config.get("comment")
                     feed.index = feed_index
-                    feed.icon = feed.icon or feed_config.get("icon")
+                    feed.icon = feed_config.get("icon")
                     feed.columns = feed_config.get("columns") or 1
                     feed.conditions = feed_config.get("conditions")
                     feed.is_parsable = feed_config.get("is_parsable", True)
@@ -149,10 +147,6 @@ def initialize(config, board_slug, upload_favicons, always_yes):
                         if not icon:
                             icon = find_favicon(feed_url, html)
                             print(f"- found favicon: {icon}")
-
-                            if upload_favicons:
-                                icon = upload_image_from_url(icon)
-                                print(f"- uploaded favicon: {icon}")
 
                         feed.icon = icon
 

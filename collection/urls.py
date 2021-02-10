@@ -1,9 +1,7 @@
 from django.urls import path
 
-from boards.views import index, board
+from boards.views import index
 
 urlpatterns = [
     path("", index, name="index"),
-
-    path("<slug:board_slug>/", board, name="board"),
 ]

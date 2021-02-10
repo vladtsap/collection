@@ -1,16 +1,10 @@
 import os
-from datetime import timedelta
 
-from random import random
-
-import sentry_sdk
-from sentry_sdk.integrations.django import DjangoIntegration
-
-DEBUG = os.getenv("DEBUG", True)
+DEBUG = True
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "m6lSvTo5EN0vJlKHVUZAVK0kiRLdJpUC"
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "0.0.0.0", "collection.vladtsap.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "0.0.0.0", "vladtsap.com"]
 
 INSTALLED_APPS = [
     "django.contrib.staticfiles",
@@ -80,8 +74,10 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
+DEPLOY = True
+
+TRUE_STATIC = "/collection" if DEPLOY else ''
 STATIC_URL = "/static/"
-CSS_HASH = str(random())
 
 # Cache
 
@@ -90,7 +86,6 @@ CACHES = {
         "BACKEND": "django.core.cache.backends.dummy.DummyCache",
     }
 }
-STATIC_PAGE_CACHE_SECONDS = 5 * 60  # 5 min
 BOARD_CACHE_SECONDS = 10 * 60  # 10 min
 
 # App settings
@@ -98,24 +93,3 @@ BOARD_CACHE_SECONDS = 10 * 60  # 10 min
 APP_NAME = "Краще з найкращого"
 APP_TITLE = "Читай інтернет нормально"
 APP_DESCRIPTION = APP_TITLE
-
-JWT_SECRET = "m6lSvTo5EN0vJlKHVUZAVK0kiRLdJpUC"  # should be the same as on vas3k.ru
-JWT_ALGORITHM = "HS256"
-JWT_EXP_TIMEDELTA = timedelta(days=120)
-
-AUTH_COOKIE_NAME = "jwt"
-AUTH_COOKIE_MAX_AGE = 300 * 24 * 60 * 60  # 300 days
-
-SENTRY_DSN = None
-
-MEDIA_UPLOAD_URL = "https://i.vas3k.ru/upload/"
-MEDIA_UPLOAD_CODE = None  # should be set in private_settings.py
-
-BLEACH_STRIP_TAGS = True
-
-
-if SENTRY_DSN and not DEBUG:
-    sentry_sdk.init(
-        dsn=SENTRY_DSN,
-        integrations=[DjangoIntegration()]
-    )

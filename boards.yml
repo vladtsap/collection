@@ -1,14 +1,14 @@
 boards:
-  - name: Підбірка
+  - name: Колекція
     slug: collection
     is_visible: true
     is_private: false
     curator:
-      name: Підбірка
+      name: Колекція
       title: Краще з найкращого
-      url: <a href="https://www.instagram.com/vladtsap/">інстаграм</a> та <a href="https://t.me/tebetam">телеграм</a> автора
+      url: <a href="https://vladtsap.com">перейти на головний сайт</a>
       avatar: https://i.vas3k.ru/fhr.png
-      bio: Колеція новин з перевірених джерел у зручному форматі
+      bio: Колеція новин з обраних джерел у зручному форматі
       footer: >
         це підбірка джерел інформації, які я регулярно читаю.
         Свіжі статті виділяються темнішим.
@@ -48,7 +48,7 @@ boards:
             is_parsable: false
           - name: Бабель
             url: https://thebabel.com.ua/
-            rss: https://rsshub.app/telegram/channel/thebabel
+            rss: https://rsshub.app/telegram/channel/babel
             is_parsable: false
           - name: Радіо Свобода
             url: https://www.radiosvoboda.org/
@@ -62,9 +62,10 @@ boards:
           - name: Дизайн
             url: https://telegraf.design/
             rss: https://telegraf.design/feed/
-          - name: Репортажі
-            url: http://www.reporters.media
-            rss: http://www.reporters.media/feed/
+          - name: Граматика
+            url: https://t.me/correctariumukr
+            rss: https://rsshub.app/telegram/channel/correctariumukr
+            is_parsable: false
       - name: айті
         slug: it
         feeds:
@@ -87,21 +88,11 @@ boards:
           - name: alexmak
             url: https://alexmak.net/
             rss: https://alexmak.net/feed/
-          - name: Максим Ільяхов
-            url: http://maximilyahov.ru/
-            rss: http://maximilyahov.ru/blog/rss/
-          - name: vas3k.club
-            url: https://vas3k.club/
-            rss: https://rsshub.app/telegram/channel/vas3k_club
-            is_parsable: false
           - name: alexmakus
             url: https://t.me/alexmakus
             rss: https://rsshub.app/telegram/channel/alexmakus
             is_parsable: false
-      - name: Україна
-        slug: ukraine
-        feeds:
-          - name: Correctarium
-            url: https://t.me/correctariumukr
-            rss: https://rsshub.app/telegram/channel/correctariumukr
+          - name: vas3k.club
+            url: https://vas3k.club/
+            rss: https://rsshub.app/telegram/channel/vas3k_club
             is_parsable: false

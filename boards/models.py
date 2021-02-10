@@ -6,8 +6,6 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 from slugify import slugify
 
-from boards.icons import DOMAIN_ICONS
-
 
 class Board(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -177,16 +175,6 @@ class Article(models.Model):
             self.created_at = datetime.utcnow()
         self.updated_at = datetime.utcnow()
         return super().save(*args, **kwargs)
-
-    def icon(self):
-        article_icon = DOMAIN_ICONS.get(self.domain)
-        if not article_icon:
-            return ""
-
-        if article_icon.startswith("fa:"):
-            return f"""<i class="{article_icon[3:]}"></i> """
-
-        return f"""<img src="{article_icon}" alt="{self.domain}" class="icon"> """
 
     def natural_created_at(self):
         if not self.created_at:
