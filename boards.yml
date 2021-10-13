@@ -89,3 +89,46 @@ boards:
           - name: vas3k.club
             url: https://vas3k.club/
             rss: https://infomate.club/parsing/telegram/vas3k_club
+          - name: Durov Channel
+            url: https://t.me/durov
+            rss: https://infomate.club/parsing/telegram/durov
+          - name: ОГо!
+            url: https://t.me/OGoMono
+            rss: https://infomate.club/parsing/telegram/OGoMono
+          - name: marketing & design
+            url: https://t.me/m_anc
+            rss: https://infomate.club/parsing/telegram/m_anc
+      - name: апдейти
+        slug: updates
+        feeds:
+          - name: Telegram Info
+            url: https://t.me/tginfo
+            rss: https://infomate.club/parsing/telegram/tginfo
+          - name: Telegram Stable Releases
+            url: https://t.me/tgstable
+            rss: https://infomate.club/parsing/telegram/tgstable
+          - name: Apple Updates
+            url: https://t.me/apple_updates
+            rss: https://infomate.club/parsing/telegram/apple_updates
+          - name: Beta Info
+            url: https://t.me/betainfo
+            rss: https://infomate.club/parsing/telegram/betainfo
+          - name: Telegram Beta
+            url: https://t.me/tgbeta
+            rss: https://infomate.club/parsing/telegram/tgbeta
+          - name: Apple • iOS • iPhone updates
+            url: https://t.me/iosupdateschannel
+            rss: https://infomate.club/parsing/telegram/iosupdateschannel
+          - name: Applicator
+            url: https://t.me/Applicator_ru
+            rss: https://infomate.club/parsing/telegram/Applicator_ru
+          - name: Is Apple Silicon ready ?
+            url: https://t.me/isapplesiliconready
+            rss: https://infomate.club/parsing/telegram/isapplesiliconready
+          - name: Now Playing [logs]
+            url: https://t.me/nowplaylogs
+            rss: https://infomate.club/parsing/telegram/nowplaylogs
+          - name: Курс валют monobank
+            url: https://t.me/monorates
+            rss: https://infomate.club/parsing/telegram/monorates
+          
