@@ -23,9 +23,6 @@ boards:
           - name: AIN
             url: https://ain.ua/
             rss: https://ain.ua/feed/
-          - name: На часі
-            url: https://nachasi.com
-            rss: https://nachasi.com/feed/
       - name: Місто
         slug: city
         feeds:
@@ -35,9 +32,6 @@ boards:
           - name: Львів
             url: http://lviv1256.com
             rss: http://lviv1256.com/feed/
-          - name: Platforma
-            url: https://platfor.ma/
-            rss: https://infomate.club/parsing/telegram/platformushka
       - name: Політика
         slug: policy
         feeds:
@@ -59,9 +53,6 @@ boards:
           - name: Дизайн
             url: https://telegraf.design/
             rss: https://telegraf.design/feed/
-          - name: Граматика
-            url: https://t.me/correctariumukr
-            rss: https://infomate.club/parsing/telegram/correctariumukr
       - name: айті
         slug: it
         feeds:
@@ -71,9 +62,6 @@ boards:
           - name: addmeto
             url: https://addmeto.cc
             rss: https://addmeto.cc/rss/
-          - name: Zavtracast
-            url: https://zavtracast.ru/
-            rss: https://infomate.club/parsing/telegram/zavtracast
       - name: Блоги
         slug: blogs
         feeds:
@@ -86,18 +74,12 @@ boards:
           - name: alexmakus
             url: https://t.me/alexmakus
             rss: https://infomate.club/parsing/telegram/alexmakus
-          - name: vas3k.club
-            url: https://vas3k.club/
-            rss: https://infomate.club/parsing/telegram/vas3k_club
           - name: Durov Channel
             url: https://t.me/durov
             rss: https://infomate.club/parsing/telegram/durov
           - name: ОГо!
             url: https://t.me/OGoMono
             rss: https://infomate.club/parsing/telegram/OGoMono
-          - name: marketing & design
-            url: https://t.me/m_anc
-            rss: https://infomate.club/parsing/telegram/m_anc
       - name: апдейти
         slug: updates
         feeds:
@@ -113,21 +95,9 @@ boards:
           - name: Beta Info
             url: https://t.me/betainfo
             rss: https://infomate.club/parsing/telegram/betainfo
-          - name: Telegram Beta
-            url: https://t.me/tgbeta
-            rss: https://infomate.club/parsing/telegram/tgbeta
           - name: Apple • iOS • iPhone updates
             url: https://t.me/iosupdateschannel
             rss: https://infomate.club/parsing/telegram/iosupdateschannel
-          - name: Applicator
-            url: https://t.me/Applicator_ru
-            rss: https://infomate.club/parsing/telegram/Applicator_ru
-          - name: Is Apple Silicon ready ?
-            url: https://t.me/isapplesiliconready
-            rss: https://infomate.club/parsing/telegram/isapplesiliconready
-          - name: Now Playing [logs]
-            url: https://t.me/nowplaylogs
-            rss: https://infomate.club/parsing/telegram/nowplaylogs
           - name: Курс валют monobank
             url: https://t.me/monorates
             rss: https://infomate.club/parsing/telegram/monorates
