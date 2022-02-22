@@ -12,7 +12,7 @@ boards:
       footer: >
         це підбірка джерел інформації, які я регулярно читаю.
         Свіжі статті виділяються темнішим.
-        Сторінка оновлюється щогодини.
+        Сторінка оновлюється кожні пів години.
     blocks:
       - name: Політика
         slug: policy
@@ -32,7 +32,7 @@ boards:
           - name: Курс валют monobank
             url: https://t.me/monobank_rate
             rss: https://infomate.club/parsing/telegram/monobank_rate
-      - name: айті
+      - name: IT
         slug: it
         feeds:
           - name: ITC
@@ -65,6 +65,9 @@ boards:
       - name: Блоги
         slug: blogs
         feeds:
+          - name: Durov Channel
+            url: https://t.me/durov
+            rss: https://infomate.club/parsing/telegram/durov
           - name: ОГо!
             url: https://t.me/OGoMono
             rss: https://infomate.club/parsing/telegram/OGoMono
@@ -77,9 +80,6 @@ boards:
           - name: alexmakus
             url: https://t.me/alexmakus
             rss: https://infomate.club/parsing/telegram/alexmakus
-          - name: Durov Channel
-            url: https://t.me/durov
-            rss: https://infomate.club/parsing/telegram/durov
       - name: апдейти
         slug: updates
         feeds:
@@ -89,12 +89,12 @@ boards:
           - name: Telegram Stable Releases
             url: https://t.me/tgstable
             rss: https://infomate.club/parsing/telegram/tgstable
-          - name: Bot News
-            url: https://t.me/BotNews
-            rss: https://infomate.club/parsing/telegram/BotNews
           - name: Beta Info
             url: https://t.me/betainfouk
             rss: https://infomate.club/parsing/telegram/betainfouk
+          - name: Bot News
+            url: https://t.me/BotNews
+            rss: https://infomate.club/parsing/telegram/BotNews
           - name: Apple Updates
             url: https://t.me/apple_updates
             rss: https://infomate.club/parsing/telegram/apple_updates
