@@ -82,7 +82,7 @@ STATICFILES_DIRS = (
 
 DEPLOY = True
 
-TRUE_STATIC = "/collection" if DEPLOY else ''
+TRUE_STATIC = ''
 STATIC_URL = "/static/"
 
 # Cache
