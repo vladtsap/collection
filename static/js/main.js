@@ -105,10 +105,12 @@ function showTooltipOnClickOnMobile() {
 
                 let tooltip = e.target.parentElement.querySelector(".article-tooltip");
                 if (tooltip !== null) {
-                    tooltip.style.visibility = "visible";
-                }
-                else {
-                    tooltip.style.visibility = "hidden";
+                    if (tooltip.style.visibility == "hidden"){
+                        tooltip.style.visibility = "visible";
+                    }
+                    else {
+                        tooltip.style.visibility = "hidden";
+                    }
                 }
                 return false;
             });
