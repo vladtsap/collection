@@ -37,7 +37,7 @@ boards:
         feeds:
           - name: ITC
             url: https://itc.ua/
-            rss: https://itc.ua/feed/
+            rss: https://itc.ua/ua/feed/
           - name: Mezha
             url: https://mezha.media/
             rss: https://mezha.media/feed/
@@ -50,6 +50,9 @@ boards:
           - name: addmeto
             url: https://addmeto.cc
             rss: https://addmeto.cc/rss/
+          - name: 9to5Mac
+            url: https://9to5mac.com/
+            rss: https://9to5mac.com/feed/
       - name: Культура
         slug: culture
         feeds:
