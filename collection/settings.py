@@ -1,5 +1,5 @@
 import os
-from secret import token_urlsafe
+from secrets import token_urlsafe
 
 DEBUG = True
 
