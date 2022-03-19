@@ -18,6 +18,7 @@ function initializeThemeSwitcher() {
 }
 
 function initializeTooltips() {
+    console.log("DEBUG — initializeTooltips running")
     let articleTooltips = document.querySelectorAll(".article-tooltip");
     for (let i = 0; i < articleTooltips.length; i++) {
         articleTooltips[i].style.visibility = null;
@@ -25,6 +26,7 @@ function initializeTooltips() {
 }
 
 function hideTooltip() {
+    console.log("DEBUG — hideTooltip running")
     let isAnyVisible = false;
 
     let articleTooltips = document.querySelectorAll(".article-tooltip");
