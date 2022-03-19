@@ -110,6 +110,7 @@ function showTooltipOnClickOnMobile() {
                     e.stopImmediatePropagation();
                 }
 
+                //hide tooltip on second tap
                 let tooltip = e.target.parentElement.parentElement.querySelector(".article-tooltip");
                 if (tooltip !== null) {
                     if (tooltip.style.visibility == "visible"){
