@@ -1,9 +1,10 @@
 import os
+from secret import token_urlsafe
 
 DEBUG = True
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY = "m6lSvTo5EN0vJlKHVUZAVK0kiRLdJpUC"
+SECRET_KEY = token_urlsafe(16)
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
