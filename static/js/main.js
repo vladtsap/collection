@@ -129,7 +129,7 @@ function showTooltipOnClickOnMobile() {
                     if (tooltip.style.visibility == "hidden") {
                         console.log("DEBUG — hidden in showTooltipOnClickOnMobile")
                         tooltip.style.visibility = null;
-                    } else if (tooltip.style.visibility == null) {
+                    } else if (tooltip.style.visibility == "") {
                         console.log("DEBUG — null in showTooltipOnClickOnMobile")
                         tooltip.style.visibility = "visible";
                     } else if (tooltip.style.visibility == "visible") {

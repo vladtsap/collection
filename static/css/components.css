@@ -315,6 +315,11 @@
             margin-top: 10px;
         }
 
+    @media only screen and (max-width : 750px) {
+        .article:hover > .article-tooltip {
+            visibility: hidden;
+        }
+    }
 
     .is-article-fresh {
         font-weight: 600;
