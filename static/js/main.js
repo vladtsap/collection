@@ -20,7 +20,7 @@ function initializeThemeSwitcher() {
 function initializeTooltips() {
     let articleTooltips = document.querySelectorAll(".article-tooltip");
     for (let i = 0; i < articleTooltips.length; i++) {
-        articleTooltips[i].style.visibility = "hidden";
+        articleTooltips[i].style.visibility = null;
     }
 }
 
@@ -124,10 +124,8 @@ function showTooltipOnClickOnMobile() {
                 //hide tooltip on second tap
                 let tooltip = e.target.parentElement.parentElement.querySelector(".article-tooltip");
                 if (tooltip !== null) {
-                    if (tooltip.style.visibility == "visible") {
-                        tooltip.style.visibility = "hidden";
-                    } else {
-                        tooltip.style.visibility = "visible";
+                    if (tooltip.style.visibility == "hidden") {
+                        tooltip.style.visibility = null;
                     }
                 }
                 return false;
@@ -139,6 +137,6 @@ function showTooltipOnClickOnMobile() {
 
 initializeThemeSwitcher();
 initializeTooltips();
-showTooltipOnClickOnMobile();
 hideTooltipOnAnyClick();
+showTooltipOnClickOnMobile();
 useSmartTooltipPositioning();
