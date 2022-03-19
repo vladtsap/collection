@@ -95,6 +95,11 @@ function showTooltipOnClickOnMobile() {
     }
 
     if (isMobile()) {
+        let articleTooltips = document.querySelectorAll(".article-tooltip");
+        for (let i = 0; i < articleTooltips.length; i++) {
+            articleTooltips[i].style.visibility = "hidden";
+        }
+
         let articleLinks = document.querySelectorAll(".article-link");
         for (let i = 0; i < articleLinks.length; i++) {
             articleLinks[i].addEventListener("click", function(e) {
