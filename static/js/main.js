@@ -103,7 +103,7 @@ function showTooltipOnClickOnMobile() {
                     e.stopImmediatePropagation();
                 }
 
-                let tooltip = e.target.parentElement.querySelector(".article-tooltip");
+                let tooltip = e.target.parentElement.parentElement.querySelector(".article-tooltip");
                 if (tooltip !== null) {
                     if (tooltip.style.visibility == "hidden"){
                         tooltip.style.visibility = "visible";
