@@ -145,7 +145,7 @@
 
             .feeds .feed .article-tooltip {
                 /* Shift tooltip up */
-                bottom: 25px !important;
+                bottom: auto !important;
                 left: 0 !important;
                 right: auto !important;
                 top: auto !important;
