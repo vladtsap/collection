@@ -1,7 +1,7 @@
 function initializeThemeSwitcher() {
     const themeSwitch = document.querySelector('.theme-switcher input[type="checkbox"]');
 
-    themeSwitch.addEventListener("change", function(e) {
+    themeSwitch.addEventListener("change", function (e) {
         let theme = 'light';
         if (e.target.checked) {
             theme = 'dark';
@@ -19,22 +19,22 @@ function initializeThemeSwitcher() {
 
 function initializeTooltips() {
     let articleTooltips = document.querySelectorAll(".article-tooltip");
-        for (let i = 0; i < articleTooltips.length; i++) {
-            articleTooltips[i].style.visibility = "hidden";
-        }
+    for (let i = 0; i < articleTooltips.length; i++) {
+        articleTooltips[i].style.visibility = "hidden";
+    }
 }
 
 function hideTooltip() {
     let isAnyVisible = false;
 
     let articleTooltips = document.querySelectorAll(".article-tooltip");
-        for (let i = 0; i < articleTooltips.length; i++) {
-            if (articleTooltips[i].style.visibility == "visible"){
-                isAnyVisible = true;
-            }
+    for (let i = 0; i < articleTooltips.length; i++) {
+        if (articleTooltips[i].style.visibility == "visible") {
+            isAnyVisible = true;
         }
+    }
 
-    if (isAnyVisible){
+    if (isAnyVisible) {
         for (let i = 0; i < articleTooltips.length; i++) {
             articleTooltips[i].style.visibility = "hidden";
         }
@@ -42,7 +42,7 @@ function hideTooltip() {
 }
 
 function hideTooltipOnAnyClick() {
-    document.body.addEventListener("click", function(e) {
+    document.body.addEventListener("click", function (e) {
         hideTooltip();
     }, true);
 }
@@ -111,11 +111,11 @@ function showTooltipOnClickOnMobile() {
         return false;
     }
 
-    
+
     if (isMobile()) {
         let articleLinks = document.querySelectorAll(".article-link");
         for (let i = 0; i < articleLinks.length; i++) {
-            articleLinks[i].addEventListener("click", function(e) {
+            articleLinks[i].addEventListener("click", function (e) {
                 if (e.cancelable) {
                     e.preventDefault(); // do not open the link
                     e.stopImmediatePropagation();
@@ -124,10 +124,9 @@ function showTooltipOnClickOnMobile() {
                 //hide tooltip on second tap
                 let tooltip = e.target.parentElement.parentElement.querySelector(".article-tooltip");
                 if (tooltip !== null) {
-                    if (tooltip.style.visibility == "visible"){
+                    if (tooltip.style.visibility == "visible") {
                         tooltip.style.visibility = "hidden";
-                    }
-                    else {
+                    } else {
                         tooltip.style.visibility = "visible";
                     }
                 }
