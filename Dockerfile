@@ -15,10 +15,9 @@ RUN apt-get update \
 
 WORKDIR /app
 
-COPY ./$requirements /app/$requirements
+COPY ./requirements.txt /app/requirements.txt
 
-RUN pip install --no-cache-dir -e . \
-    && pip install --no-cache-dir -r $requirements
+RUN pip install --no-cache-dir -r requirements.txt
 
 RUN python -c "import nltk; nltk.download('punkt')"
 
