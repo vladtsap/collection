@@ -37,6 +37,13 @@ function initializeThemeSwitcher() {
     }
 }
 
+function initializeTooltips() {
+    let articleTooltips = document.querySelectorAll(".article-tooltip");
+        for (let i = 0; i < articleTooltips.length; i++) {
+            articleTooltips[i].style.visibility = "hidden";
+        }
+}
+
 function hideTooltip() {
     let isAnyVisible = false;
 
@@ -105,11 +112,6 @@ function useSmartTooltipPositioning() {
 
 function showTooltipOnClickOnMobile() {
     if (isMobile()) {
-        let articleTooltips = document.querySelectorAll(".article-tooltip");
-        for (let i = 0; i < articleTooltips.length; i++) {
-            articleTooltips[i].style.visibility = "hidden";
-        }
-
         let articleLinks = document.querySelectorAll(".article-link");
         for (let i = 0; i < articleLinks.length; i++) {
             articleLinks[i].addEventListener("click", function(e) {
@@ -136,6 +138,7 @@ function showTooltipOnClickOnMobile() {
 
 
 initializeThemeSwitcher();
+initializeTooltips();
 showTooltipOnClickOnMobile();
 hideTooltipOnAnyClick();
 useSmartTooltipPositioning();
