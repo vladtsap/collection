@@ -18,7 +18,6 @@ function initializeThemeSwitcher() {
 }
 
 function initializeTooltips() {
-    console.log("DEBUG — initializeTooltips running")
     let articleTooltips = document.querySelectorAll(".article-tooltip");
     for (let i = 0; i < articleTooltips.length; i++) {
         articleTooltips[i].style.visibility = null;
@@ -26,7 +25,6 @@ function initializeTooltips() {
 }
 
 function hideTooltip() {
-    console.log("DEBUG — hideTooltip running")
     let isAnyVisible = false;
 
     let articleTooltips = document.querySelectorAll(".article-tooltip");
@@ -127,13 +125,9 @@ function showTooltipOnClickOnMobile() {
                 let tooltip = e.target.parentElement.parentElement.querySelector(".article-tooltip");
                 if (tooltip !== null) {
                     if (tooltip.style.visibility == "hidden") {
-                        console.log("DEBUG — hidden in showTooltipOnClickOnMobile")
                         tooltip.style.visibility = null;
                     } else if (tooltip.style.visibility == "") {
-                        console.log("DEBUG — null in showTooltipOnClickOnMobile")
                         tooltip.style.visibility = "visible";
-                    } else if (tooltip.style.visibility == "visible") {
-                        console.log("DEBUG — STRANGE visible in showTooltipOnClickOnMobile")
                     }
                 }
                 return false;
