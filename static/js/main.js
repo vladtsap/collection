@@ -127,6 +127,9 @@ function showTooltipOnClickOnMobile() {
                     if (tooltip.style.visibility == "hidden") {
                         tooltip.style.visibility = null;
                     }
+                    if (tooltip.style.visibility == null) {
+                        tooltip.style.visibility = "visible";
+                    }
                 }
                 return false;
             });
