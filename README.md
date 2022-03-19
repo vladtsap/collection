@@ -6,9 +6,9 @@ _Collection_ is a small web service that shows multiple RSS sources on one page.
 
 ### Live URL: [collection.vladtsap.com](https://collection.vladtsap.com)
 
-## Running it locally
+## Deploying
 
-The easy way. Install [docker](https://docs.docker.com/install/) on your machine. Then:
+Install [docker](https://docs.docker.com/install/) on your machine. Then:
 
 ```
 git clone git@github.com:vladtsap/collection.git
@@ -16,7 +16,7 @@ cd collection
 docker-compose up --build
 ```
 
-After that navigate to [localhost:8000](http://localhost:8000)
+After that navigate to [localhost:8585](http://localhost:8585)
 
 To terminate it:
 
@@ -25,7 +25,7 @@ docker-compose down --remove-orphans
 ```
 
 
-## Running for development
+## Local development
 
 Make sure you have python3 and postresql installed locally.
 
@@ -64,10 +64,10 @@ python3 scripts/update.py
 #### Step 6: Run dev server
 
 ```
-python3 manage.py runserver 8000
+python3 manage.py runserver 8585
 ```
 
-Then go to [localhost:8000](http://localhost:8000) again
+Then go to [localhost:8585](http://localhost:8585) again
 
 ## boards.yml format
 
