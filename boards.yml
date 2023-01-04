@@ -7,7 +7,6 @@ boards:
       name: Колекція
       title: Краще з найкращого
       url: <a href="https://vladtsap.com">перейти на головну сторінку</a>
-      avatar: https://i.vas3k.ru/fhr.png
       bio: Колеція новин з обраних джерел у зручному форматі
       footer: >
         це підбірка джерел інформації, які я регулярно читаю.
@@ -44,12 +43,6 @@ boards:
           - name: AIN
             url: https://ain.ua/
             rss: https://ain.ua/feed/
-          - name: DOU
-            url: https://dou.ua/
-            rss: https://dou.ua/feed/
-          - name: addmeto
-            url: https://addmeto.cc
-            rss: https://addmeto.cc/rss/
           - name: 9to5Mac
             url: https://9to5mac.com/
             rss: https://9to5mac.com/feed/
@@ -62,9 +55,6 @@ boards:
           - name: Музика
             url: https://slukh.media/
             rss: https://slukh.media/feed/
-          - name: Дизайн
-            url: https://telegraf.design/
-            rss: https://telegraf.design/feed/
       - name: Блоги
         slug: blogs
         feeds:
@@ -74,15 +64,6 @@ boards:
           - name: ОГо!
             url: https://t.me/OGoMono
             rss: https://infomate.club/parsing/telegram/OGoMono
-          - name: vas3k
-            url: https://vas3k.ru/
-            rss: https://vas3k.ru/rss/
-          - name: alexmak
-            url: https://alexmak.net/
-            rss: https://alexmak.net/feed/
-          - name: alexmakus
-            url: https://t.me/alexmakus
-            rss: https://infomate.club/parsing/telegram/alexmakus
       - name: апдейти
         slug: updates
         feeds:
@@ -101,6 +82,3 @@ boards:
           - name: Apple Updates
             url: https://t.me/apple_updates
             rss: https://infomate.club/parsing/telegram/apple_updates
-          - name: Apple • iOS • iPhone updates
-            url: https://t.me/iosupdateschannel
-            rss: https://infomate.club/parsing/telegram/iosupdateschannel
