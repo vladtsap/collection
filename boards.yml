@@ -21,16 +21,16 @@ boards:
             rss: http://lviv1256.com/feed/
           - name: Бабель
             url: https://thebabel.com.ua/
-            rss: https://infomate.club/parsing/telegram/babel
+            rss: https://rsshub.app/telegram/channel/babel
           - name: Радіо Свобода
             url: https://www.radiosvoboda.org/
             rss: https://www.radiosvoboda.org/api/zrqiteuuir          
           - name: Суспільне
             url: https://suspilne.media
-            rss: https://infomate.club/parsing/telegram/suspilnenews
+            rss: https://rsshub.app/telegram/channel/suspilnenews
           - name: Курс валют monobank
             url: https://t.me/monobank_rate
-            rss: https://infomate.club/parsing/telegram/monobank_rate
+            rss: https://rsshub.app/telegram/channel/monobank_rate
       - name: IT
         slug: it
         feeds:
@@ -60,25 +60,25 @@ boards:
         feeds:
           - name: Durov Channel
             url: https://t.me/durov
-            rss: https://infomate.club/parsing/telegram/durov
+            rss: https://rsshub.app/telegram/channel/durov
           - name: ОГо!
             url: https://t.me/OGoMono
-            rss: https://infomate.club/parsing/telegram/OGoMono
+            rss: https://rsshub.app/telegram/channel/OGoMono
       - name: апдейти
         slug: updates
         feeds:
           - name: Telegram Info
             url: https://t.me/tginfouk
-            rss: https://infomate.club/parsing/telegram/tginfouk
+            rss: https://rsshub.app/telegram/channel/tginfouk
           - name: Telegram Stable Releases
             url: https://t.me/tgstable
-            rss: https://infomate.club/parsing/telegram/tgstable
+            rss: https://rsshub.app/telegram/channel/tgstable
           - name: Beta Info
             url: https://t.me/betainfouk
-            rss: https://infomate.club/parsing/telegram/betainfouk
+            rss: https://rsshub.app/telegram/channel/betainfouk
           - name: Bot News
             url: https://t.me/BotNews
-            rss: https://infomate.club/parsing/telegram/BotNews
+            rss: https://rsshub.app/telegram/channel/BotNews
           - name: Apple Updates
             url: https://t.me/apple_updates
-            rss: https://infomate.club/parsing/telegram/apple_updates
+            rss: https://rsshub.app/telegram/channel/apple_updates
